@@ -11,7 +11,7 @@
 
     //set username first to ensure the sequence in FormData,
     //so that server can detect username first to create directory
-    $scope.customer.name = '';
+    $scope.customer.name = $scope.user.username;
     $scope.customer.nameVaild = '';
     $scope.customer.fileValid = 'No file yet';
     $scope.response.status = 'Not upload yet';
@@ -74,6 +74,15 @@
       );
     };
 
+    function isNameValid(name) {
+      if (name === '') {
+        $scope.customer.nameValid = 'Username cannot be empty!';
+        return;
+      } else if (name.search(/[\#<>$%\*!\`&\'\"\|\{\}\?=\/\\:@\s]/g) >= 0) {
+        $scope.customer.nameValid = 'Invalid!  Username contains characters';
+        return;
+      }
+    }
   }
 
   angular.module('labDoc').controller('UploadPDFCtrl', UploadPDFCtrl);

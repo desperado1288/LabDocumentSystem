@@ -11,6 +11,7 @@
         var modelSetter = model.assign;
         element.bind('change', function () {
           for (var file in element[0].files) {
+            //TODO: empty file?
             if (file && (element[0].files[file].name + '').search(/[\#<>$%\*!\`&\'\"\|\{\}\?=\/\\:@\s]/g) >= 0) {
               //TODO: $parent not match
               scope.$parent.fileValid = 'Invalid!.  File name contains special character.';
