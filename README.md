@@ -17,4 +17,5 @@ AngularJs, NodeJs, Express, MongoDB, MySQL and etc.
 ## Owner
 @team: [Sly pyhton](https://github.com/orgs/BitTigerInst/teams/sly-python)
 @Members: [@lululiu008](https://github.com/orgs/BitTigerInst/people/lululiu008), [@jiweix](https://github.com/orgs/BitTigerInst/people/jiweix), 
-[@yuqinlear](https://github.com/orgs/BitTigerInst/people/yuqinlear)
+[@yuqinlear](https://github.com/orgs/BitTigerInst/people/yuqinlear),
+[@desperado1288](https://github.com/desperado1288)
